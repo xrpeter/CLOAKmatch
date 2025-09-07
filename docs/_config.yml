@@ -7,3 +7,7 @@ color_scheme: nil
 permalink: pretty
 plugins:
   - jekyll-remote-theme
+
+# Optional: order pages via front matter nav_order
+just_the_docs:
+  collections: {}

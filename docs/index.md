@@ -3,20 +3,20 @@ title: CLOAKmatch
 nav_order: 1
 ---
 
-Private set-style syncing via Ristretto255 OPRF with encrypted metadata.
+Private set-style syncing of indicators with encrypted metadata using a Ristretto255 OPRF and XChaCha20‑Poly1305.
 
-Use the left navigation to explore:
+What’s here:
 
 - Quickstart: two commands to run server and client
-- Source File Format: simple line format with JSON metadata
+- Source File Format: one-line IOC plus JSON metadata
 - CLI Reference: helper scripts and full server/client CLIs
 - HTTP API: endpoints for sync, encryption type, and OPRF
 
-Highlights:
+Why CLOAKmatch:
 
-- Strong privacy: OPRF on Ristretto255 + SHA-512
-- Secure metadata: XChaCha20-Poly1305
-- Simple workflow: one-line server and client helpers
+- Privacy-preserving queries via OPRF (Ristretto255 + SHA‑512)
+- Secure metadata at rest (XChaCha20‑Poly1305)
+- Straightforward CLI and minimal setup
 
 ## Prerequisites
 
