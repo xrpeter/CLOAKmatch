@@ -17,6 +17,7 @@ Private set-style syncing of indicators with encrypted metadata using an OPRF on
 - [Security](#security)
 - [Testing](#testing)
 - [Troubleshooting](#troubleshooting)
+ - [Documentation Site](#documentation-site)
 
 ## Prerequisites
 
@@ -109,3 +110,11 @@ Notes:
 ## Troubleshooting
 - libsodium not found: set `SODIUM_LIBRARY_PATH` to the libsodium library file or install via your package manager.
 - Port already in use: choose a different bind, e.g., `127.0.0.1:8001`.
+
+## Documentation Site
+
+This repo includes a `docs/` folder ready for GitHub Pages.
+
+- Enable Pages: Settings → Pages → Source: `Deploy from a branch`; Branch: your default branch; Folder: `/docs`.
+- The site will publish to `https://<your-user-or-org>.github.io/<your-repo>/`.
+- To display the logo on the site, copy `CLOAKmatch.png` into `docs/` and reference it as `CLOAKmatch.png`.
