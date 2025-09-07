@@ -21,3 +21,12 @@
   margin-left: 0 !important;
   margin-right: auto !important;
 }
+
+/* Ensure dark appearance even if scheme isn't picked up */
+:root { color-scheme: dark; }
+body { background-color: #0b0d12; color: #e6e8ef; }
+.site-header, .side-bar { background-color: #0f1220; }
+.site-header, .side-bar, .main-content, .page, .search, .search-input { border-color: #1f2433 !important; }
+a { color: #7dc3ff; }
+a:hover { color: #a7d7ff; }
+code, pre { background-color: #0f1218; border: 1px solid #1f2433; }
