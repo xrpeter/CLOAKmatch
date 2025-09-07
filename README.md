@@ -21,6 +21,10 @@ Private set-style syncing of indicators with encrypted metadata using an OPRF on
 ## Prerequisites
 
 - Python 3.11+
+- Python packages (dev/test):
+  - Create a virtual environment (recommended): `python -m venv .venv`
+  - Activate it: `source .venv/bin/activate` (Windows PowerShell: `.venv\\Scripts\\Activate.ps1`)
+  - Install requirements: `python -m pip install -r requirements.txt`
 - libsodium:
   - macOS: `brew install libsodium`
   - Debian/Ubuntu: `sudo apt-get install libsodium23 libsodium-dev`
