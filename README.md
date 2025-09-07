@@ -7,7 +7,6 @@
 Private set-style syncing of indicators with encrypted metadata using an OPRF on Ristretto255 and XChaCha20-Poly1305.
 
 ## Table of Contents
-- [Overview](#overview)
 - [Prerequisites](#prerequisites)
 - [Quickstart](#quickstart)
 - [Source File Format](#source-file-format)
@@ -18,13 +17,6 @@ Private set-style syncing of indicators with encrypted metadata using an OPRF on
 - [Security](#security)
 - [Testing](#testing)
 - [Troubleshooting](#troubleshooting)
-
-## Overview
-
-This repo contains:
-- Server CLI + HTTP API (serves changes and OPRF evaluation)
-- Client CLI (syncs changes, queries an IOC, decrypts metadata on match)
-- Tests (CLI + HTTP + end-to-end)
 
 ## Prerequisites
 
