@@ -1,26 +1,26 @@
 title: CLOAKmatch
 description: Private set-style syncing of indicators via Ristretto255 OPRF
-remote_theme: just-the-docs/just-the-docs
-color_scheme: light
+
+# Minimal Mistakes Jekyll theme with dark skin
+remote_theme: mmistakes/minimal-mistakes
+minimal_mistakes_skin: dark
 
 logo: CLOAKmatch.png
-favicon_ico: CLOAKmatch.png
 
-search_enabled: true
-heading_anchors: true
-aux_links:
-  View on GitHub: https://github.com/your-user-or-org/your-repo
-
-nav_external_links:
-  - title: PyPI libsodium (install)
-    url: https://doc.libsodium.org/installation
-    hide_icon: false
-
-footer_content: "Copyright © {{ site.time | date: '%Y' }}"
+search: true
 
 plugins:
   - jekyll-seo-tag
 
+# Use single-column layout with page ToC by default
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: single
+      toc: true
+      toc_sticky: true
+
 exclude:
   - README.md
-

@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-nav_order: 2
+permalink: /getting-started/
 ---
 
 # Getting Started
@@ -40,4 +40,3 @@ python client_simple.py evil.com --server 127.0.0.1:8000 --name testSource
 ```
 
 Expected output includes a PRF and decrypted metadata when the IOC exists.
-

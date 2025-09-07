@@ -1,6 +1,6 @@
 ---
 title: Client CLI
-nav_order: 4
+permalink: /usage-client/
 ---
 
 # Client CLI
@@ -38,4 +38,3 @@ Entry point: `python -m client.cli`
 - `changes.log`: mirror of server log (full then deltas)
 - `active_index.csv`: compact active set for fast matching
 - `matches.txt`: optional append-only record of successful queries
-

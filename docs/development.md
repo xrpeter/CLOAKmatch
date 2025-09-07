@@ -1,6 +1,6 @@
 ---
 title: Development
-nav_order: 9
+permalink: /development/
 ---
 
 # Development
@@ -28,4 +28,3 @@ pytest -q
 - Python 3.11+
 - Avoid printing secrets; key files are stored under `server/secrets/<data_name>/private.key` with restrictive permissions where possible
 - Client/server import `shared.crypto_tools` via a workspace-root insertion for reliable imports
-

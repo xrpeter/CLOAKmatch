@@ -1,6 +1,6 @@
 ---
 title: HTTP API
-nav_order: 5
+permalink: /api-http/
 ---
 
 # HTTP API
@@ -42,4 +42,3 @@ Notes:
 
 - Client sends `B = r * H1(IOC)`; server returns `E = k * B`; client unblinds and finalizes.
 - See Client CLI for the full query flow.
-

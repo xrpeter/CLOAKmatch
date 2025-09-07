@@ -1,6 +1,6 @@
 ---
 title: FAQ
-nav_order: 11
+permalink: /faq/
 ---
 
 # FAQ
@@ -19,4 +19,3 @@ nav_order: 11
 
 - Is the change log confidential?
   - It hides IOCs but reveals volume and churn over time. Consider operational privacy requirements before publishing logs broadly.
-

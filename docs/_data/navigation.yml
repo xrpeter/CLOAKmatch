@@ -1,0 +1,23 @@
+main:
+  - title: "Overview"
+    url: /
+  - title: "Getting Started"
+    url: /getting-started/
+  - title: "Server CLI"
+    url: /usage-server/
+  - title: "Client CLI"
+    url: /usage-client/
+  - title: "HTTP API"
+    url: /api-http/
+  - title: "Data Formats"
+    url: /reference-data-formats/
+  - title: "Security"
+    url: /reference-security/
+  - title: "Architecture"
+    url: /concepts-architecture/
+  - title: "Development"
+    url: /development/
+  - title: "Troubleshooting"
+    url: /troubleshooting/
+  - title: "FAQ"
+    url: /faq/

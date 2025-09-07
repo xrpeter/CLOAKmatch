@@ -1,6 +1,6 @@
 ---
 title: Security
-nav_order: 7
+permalink: /reference-security/
 ---
 
 # Security
@@ -29,4 +29,3 @@ nav_order: 7
 ## Library Loading
 
 - libsodium is dynamically loaded via `ctypes`. If discovery fails, set `SODIUM_LIBRARY_PATH` to the full shared library path.
-

@@ -1,13 +1,13 @@
 ---
 title: Overview
-nav_order: 1
+permalink: /
 ---
 
 # CLOAKmatch
 
 Private set-style syncing of indicators with encrypted metadata using an OPRF on Ristretto255 and XChaCha20-Poly1305.
 
-Tip: To display the logo on this site, copy `CLOAKmatch.png` into the `docs/` folder, then set `logo: CLOAKmatch.png` in `docs/_config.yml` (already configured).
+Tip: To display the logo on this site, copy `CLOAKmatch.png` into the `docs/` folder; it is already referenced in `docs/_config.yml`.
 
 ## What Is It?
 
@@ -51,4 +51,3 @@ If the IOC appears in the dataset, the client prints PRF and decrypted metadata.
 - `client_simple.py`: one-shot client sync + query for a provided IOC
 - `shared/crypto_tools.py`: libsodium-backed OPRF + XChaCha20-Poly1305 helpers
 - `tests/`: pytest suite (CLI, API, end-to-end)
-

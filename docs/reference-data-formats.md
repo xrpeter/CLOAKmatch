@@ -1,6 +1,6 @@
 ---
 title: Data Formats
-nav_order: 6
+permalink: /reference-data-formats/
 ---
 
 # Data Formats
@@ -44,4 +44,3 @@ Location: `client/data/<server_label>/<data_name>/active_index.csv`
 
 - Compact mapping: `PRF_HEX,NONCE_HEX:CT_HEX`
 - Updated on every `sync_data` to reflect current active entries
-

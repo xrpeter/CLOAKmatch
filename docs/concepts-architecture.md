@@ -1,6 +1,6 @@
 ---
 title: Architecture
-nav_order: 8
+permalink: /concepts-architecture/
 ---
 
 # Architecture
@@ -40,4 +40,3 @@ nav_order: 8
 3) POST to `/oprf_evaluate` and receive `E = k*B`
 4) Unblind to `Q = r^{-1}*E`, finalize `PRF = H(ioc, Q)`
 5) If `PRF` active, decrypt metadata and return to user
-

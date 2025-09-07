@@ -1,6 +1,6 @@
 ---
 title: Server CLI
-nav_order: 3
+permalink: /usage-server/
 ---
 
 # Server CLI
@@ -38,4 +38,3 @@ Entry point: `python -m server.cli`
 - One IOC per line: `<ioc>,{json_metadata}`
 - Right side must be valid JSON; `{}` if none
 - Lines without a comma are ignored; blank lines allowed
-
