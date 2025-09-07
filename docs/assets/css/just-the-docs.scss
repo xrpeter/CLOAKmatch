@@ -5,22 +5,19 @@
 /* Enlarge the header logo only; keep layout intact */
 .site-header .site-logo,
 .site-header .site-logo img {
-  height: 72px !important;
+  height: 56px !important;
   width: auto !important;
 }
 
 @media (max-width: 50rem) {
   .site-header .site-logo,
   .site-header .site-logo img {
-    height: 56px !important;
+    height: 44px !important;
   }
 }
 
 /* Left-align the content area without breaking the sidebar layout */
-.main-content .page {
-  margin-left: 0 !important;
-  margin-right: auto !important;
-}
+.main-content .page { margin-left: 0 !important; margin-right: auto !important; }
 
 /* Dark mode (toggle via html[data-theme="dark"]) */
 html[data-theme="dark"] { color-scheme: dark; }

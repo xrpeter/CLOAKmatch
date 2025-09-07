@@ -3,7 +3,20 @@ title: CLOAKmatch
 nav_order: 1
 ---
 
-This documentation covers prerequisites, a 2-command quickstart, the source file format, CLI usage, and HTTP API details.
+Private set-style syncing via Ristretto255 OPRF with encrypted metadata.
+
+Use the left navigation to explore:
+
+- Quickstart: two commands to run server and client
+- Source File Format: simple line format with JSON metadata
+- CLI Reference: helper scripts and full server/client CLIs
+- HTTP API: endpoints for sync, encryption type, and OPRF
+
+Highlights:
+
+- Strong privacy: OPRF on Ristretto255 + SHA-512
+- Secure metadata: XChaCha20-Poly1305
+- Simple workflow: one-line server and client helpers
 
 ## Prerequisites
 
