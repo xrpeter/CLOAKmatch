@@ -1,9 +1,0 @@
-docs:
-  - title: Quickstart
-    url: /quickstart/
-  - title: Source File Format
-    url: /source-format/
-  - title: CLI Reference
-    url: /cli/
-  - title: HTTP API
-    url: /api/
