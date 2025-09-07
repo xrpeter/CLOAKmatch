@@ -1,0 +1,17 @@
+---
+---
+@import "just-the-docs";
+
+/* Slightly enlarge the header logo without affecting layout */
+.site-header .site-logo {
+  height: 40px; /* default is smaller; bump for readability */
+  width: auto;
+  margin-right: 0.4rem;
+}
+
+@media (max-width: 50rem) {
+  .site-header .site-logo {
+    height: 32px;
+  }
+}
+
