@@ -1,4 +1,4 @@
-# PSI Sync: Server and Client (Ristretto255 OPRF)
+# CLOAKmatch: Server and Client (Ristretto255 OPRF)
 
 Private set-style syncing of indicators and encrypted metadata via an OPRF on Ristretto255 with XChaCha20-Poly1305. This repo contains:
 - Server CLI + HTTP API (serves changes and OPRF evaluation)
