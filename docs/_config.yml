@@ -1,13 +1,20 @@
 title: CLOAKmatch
 description: Private set-style syncing via Ristretto255 OPRF
-remote_theme: just-the-docs/just-the-docs
-logo: CLOAKmatch.png
-search_enabled: true
-color_scheme: nil
+remote_theme: mmistakes/minimal-mistakes
+logo: /CLOAKmatch.png
 permalink: pretty
+skin: dark
 plugins:
   - jekyll-remote-theme
+  - jekyll-seo-tag
 
-# Optional: order pages via front matter nav_order
-just_the_docs:
-  collections: {}
+# Defaults: use docs layout and shared sidebar
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: docs
+      sidebar:
+        title: Documentation
+        nav: docs

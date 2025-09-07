@@ -1,6 +1,6 @@
 ---
 title: Source File Format
-nav_order: 3
+permalink: /source-format/
 ---
 
 Plain text, UTF-8; one item per line in the form:

@@ -1,6 +1,6 @@
 ---
 title: HTTP API
-nav_order: 5
+permalink: /api/
 ---
 
 All endpoints are served over HTTP by `server.api_server` once started via `python -m server.cli start_server <host:port>` or `server_simple.py`.

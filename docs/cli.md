@@ -1,6 +1,6 @@
 ---
 title: CLI Reference
-nav_order: 4
+permalink: /cli/
 ---
 
 ## One-liner Helpers

@@ -1,6 +1,6 @@
 ---
 title: Quickstart
-nav_order: 2
+permalink: /quickstart/
 ---
 
 Two commands: one to start the server with a demo dataset (or your own source file), one to sync and query from the client.

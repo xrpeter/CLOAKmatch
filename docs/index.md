@@ -1,6 +1,6 @@
 ---
 title: CLOAKmatch
-nav_order: 1
+permalink: /
 ---
 
 Private set-style syncing of indicators with encrypted metadata using a Ristretto255 OPRF and XChaCha20‑Poly1305.
