@@ -3,8 +3,6 @@ title: CLI Reference
 nav_order: 4
 ---
 
-Command reference for the server and client CLIs, plus the helper one-liners.
-
 ## One-liner Helpers
 
 - `server_simple.py`: Creates/refreshes a dataset, prepares a sample (or uses `--source`), syncs, and starts the HTTP API.

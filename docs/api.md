@@ -3,8 +3,6 @@ title: HTTP API
 nav_order: 5
 ---
 
-HTTP endpoints served by the CLOAKmatch server (`server.api_server`).
-
 All endpoints are served over HTTP by `server.api_server` once started via `python -m server.cli start_server <host:port>` or `server_simple.py`.
 
 ## GET /sync_data
