@@ -1,8 +1,7 @@
 ---
 title: Quickstart
+nav_order: 2
 ---
-
-# Quickstart
 
 Two commands: one to start the server with a demo dataset (or your own source file), one to sync and query from the client.
 
@@ -25,4 +24,3 @@ python client_simple.py <ioc> --server 127.0.0.1:8000 --name testSource
 ```
 
 Replace `<ioc>` with the exact string used in your source file, e.g. `evil.com`.
-

@@ -1,8 +1,7 @@
 ---
 title: Source File Format
+nav_order: 3
 ---
-
-# Source File Format
 
 Plain text, UTF-8; one item per line in the form:
 
@@ -23,4 +22,3 @@ Notes:
 - The right side must be valid JSON. Use `{}` if you have no metadata.
 - Lines without a comma are skipped; blank lines are allowed.
 - Proper JSON quoting is required (double quotes, no trailing commas).
-

@@ -1,8 +1,7 @@
 ---
 title: CLI Reference
+nav_order: 4
 ---
-
-# CLI Reference
 
 ## One-liner Helpers
 
@@ -27,4 +26,3 @@ Invoke as `python -m client.cli <command> [args]`.
 - `reset_data <host:port> <data_name>`
 - `purge_data <host:port> <data_name>`
 - `query <host:port> <data_name> <ioc>`
-
