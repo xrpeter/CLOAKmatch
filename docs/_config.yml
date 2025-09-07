@@ -3,13 +3,15 @@ description: Private set-style syncing of indicators via Ristretto255 OPRF
 
 # Minimal Mistakes Jekyll theme with dark skin
 remote_theme: mmistakes/minimal-mistakes
-minimal_mistakes_skin: dark
+# Use a light skin since dark mode isn't desired/allowed
+minimal_mistakes_skin: default
 
 logo: CLOAKmatch.png
 
 search: true
 
 plugins:
+  - jekyll-remote-theme
   - jekyll-seo-tag
 
 # Use single-column layout with page ToC by default

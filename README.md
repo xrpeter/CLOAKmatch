@@ -113,7 +113,7 @@ Notes:
 
 ## Documentation Site
 
-A documentation site is included under `docs/`, using the Minimal Mistakes Jekyll theme with a dark skin.
+A documentation site is included under `docs/`, using the Minimal Mistakes Jekyll theme (light skin).
 
 - Enable GitHub Pages: Settings → Pages → Source: `Deploy from a branch`; Branch: your default branch; Folder: `/docs`.
 - The site will publish to `https://<your-user-or-org>.github.io/<your-repo>/`.
