@@ -3,7 +3,7 @@ description: Private set-style syncing via Ristretto255 OPRF
 remote_theme: just-the-docs/just-the-docs
 logo: CLOAKmatch.png
 search_enabled: true
-color_scheme: dark
+color_scheme: nil
 permalink: pretty
 plugins:
   - jekyll-remote-theme

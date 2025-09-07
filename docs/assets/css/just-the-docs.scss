@@ -22,11 +22,11 @@
   margin-right: auto !important;
 }
 
-/* Ensure dark appearance even if scheme isn't picked up */
-:root { color-scheme: dark; }
-body { background-color: #0b0d12; color: #e6e8ef; }
-.site-header, .side-bar { background-color: #0f1220; }
-.site-header, .side-bar, .main-content, .page, .search, .search-input { border-color: #1f2433 !important; }
-a { color: #7dc3ff; }
-a:hover { color: #a7d7ff; }
-code, pre { background-color: #0f1218; border: 1px solid #1f2433; }
+/* Dark mode (toggle via html[data-theme="dark"]) */
+html[data-theme="dark"] { color-scheme: dark; }
+html[data-theme="dark"] body { background-color: #0b0d12; color: #e6e8ef; }
+html[data-theme="dark"] .site-header, html[data-theme="dark"] .side-bar { background-color: #0f1220; }
+html[data-theme="dark"] .site-header, html[data-theme="dark"] .side-bar, html[data-theme="dark"] .main-content, html[data-theme="dark"] .page, html[data-theme="dark"] .search, html[data-theme="dark"] .search-input { border-color: #1f2433 !important; }
+html[data-theme="dark"] a { color: #7dc3ff; }
+html[data-theme="dark"] a:hover { color: #a7d7ff; }
+html[data-theme="dark"] code, html[data-theme="dark"] pre { background-color: #0f1218; border: 1px solid #1f2433; }
