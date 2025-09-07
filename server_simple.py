@@ -6,7 +6,7 @@ Creates (or resets) a demo dataset, prepares a tiny sample source,
 computes server-side state, and starts the HTTP API.
 
 Usage:
-  python server_simple.py [--host 127.0.0.1] [--port 8000] [--name testSource]
+  python server_simple.py [--host 127.0.0.1] [--port 8000] [--name testSource] [--source path/to/source.txt]
 
 This is a convenience wrapper around `python -m server.cli` commands.
 """
@@ -30,6 +30,14 @@ def main() -> int:
     ap.add_argument("--host", default="127.0.0.1", help="Bind host (default: 127.0.0.1)")
     ap.add_argument("--port", type=int, default=8000, help="Bind port (default: 8000)")
     ap.add_argument("--name", default="testSource", help="Dataset name (alphanumeric)")
+    ap.add_argument(
+        "--source",
+        default=None,
+        help=(
+            "Path to a source file with one line per IOC in the format "
+            "<ioc>,{json_metadata}. If omitted, a sample file is created."
+        ),
+    )
     args = ap.parse_args()
 
     bind = f"{args.host}:{args.port}"
@@ -38,10 +46,17 @@ def main() -> int:
     subprocess.run([sys.executable, "-m", "server.cli", "create_source", args.name, "--remove"])  # ignore rc
     run([sys.executable, "-m", "server.cli", "create_source", args.name, "-a", "classic", "-r", "1d"])
 
-    # 2) Prepare a minimal sample source file under workspace
-    sample_path = Path("sample_data.txt").resolve()
-    sample_path.write_text('evil.com,{"desc":"known bad domain"}\n', encoding="utf-8")
-    print(f"Wrote sample source: {sample_path}")
+    # 2) Prepare or use source file
+    if args.source:
+        sample_path = Path(args.source).expanduser().resolve()
+        if not sample_path.exists():
+            print(f"Provided --source not found: {sample_path}", file=sys.stderr)
+            return 1
+        print(f"Using provided source: {sample_path}")
+    else:
+        sample_path = Path("sample_data.txt").resolve()
+        sample_path.write_text('evil.com,{"desc":"known bad domain"}\n', encoding="utf-8")
+        print(f"Wrote sample source: {sample_path}")
 
     # 3) Compute server-side evaluations and changes.log
     run([sys.executable, "-m", "server.cli", "sync", args.name, str(sample_path)])
@@ -54,4 +69,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-

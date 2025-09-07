@@ -10,6 +10,7 @@ Private set-style syncing of indicators with encrypted metadata using an OPRF on
 - [Overview](#overview)
 - [Prerequisites](#prerequisites)
 - [Quickstart](#quickstart)
+- [Source File Format](#source-file-format)
 - [How It Works](#how-it-works)
 - [Repository Layout](#repository-layout)
 - [Commands](#commands)
@@ -39,13 +40,31 @@ Two simple commands: one to set up and run the server, one to sync and query fro
 ### Server (terminal A)
 - Start the server with a demo dataset and sample IOC/metadata:
   - `python server_simple.py`
-  - Options: `--host 127.0.0.1 --port 8000 --name testSource`
+  - Options: `--host 127.0.0.1 --port 8000 --name testSource --source path/to/source.txt`
 
 ### Client (terminal B)
 - Sync and query in one shot (replace `<ioc>`):
   - `python client_simple.py <ioc>`
   - Example: `python client_simple.py evil.com`
   - Options: `--server 127.0.0.1:8000 --name testSource`
+
+## Source File Format
+
+Plain text, UTF-8; one item per line in the form:
+
+- `<ioc>,{json_metadata}`
+
+Examples:
+
+- `evil.com,{"desc":"known bad domain"}`
+- `1.2.3.4,{"as":"AS64500","type":"ip"}`
+- `44d88612fea8a8f36de82e1278abb02f,{"type":"md5"}`
+
+Notes:
+
+- The right side must be valid JSON. Use `{}` if you have no metadata.
+- Lines without a comma are skipped; blank lines are allowed.
+- The server reads the file as-is; quoting must be proper JSON (double quotes, no trailing commas).
 
 ## How It Works
 - Server computes OPRF(PRF) over each IOC (Ristretto255 + SHA‑512), encrypts metadata with a key derived from HKDF(PRF||Q), and maintains an append-only `changes.log` (ADDED/REMOVED with nonce:ciphertext and a cumulative hash).
