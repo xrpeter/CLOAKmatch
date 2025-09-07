@@ -9,25 +9,18 @@
     <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}" />
   </head>
   <body>
-    {% include nav.html %}
-    <header class="site-hero">
-      <div class="container">
-        <h1 class="site-title">{{ page.title }}</h1>
-        {% if page.subtitle %}<p class="site-subtitle">{{ page.subtitle }}</p>{% endif %}
-      </div>
-    </header>
-    <main class="container content">
-      {{ content }}
-    </main>
-    <footer class="site-footer">
-      <div class="container">
-        <p>
-          <strong>{{ site.title }}</strong> — {{ site.description }}
-        </p>
-        <p class="muted">Copyright © {{ site.time | date: "%Y" }}</p>
-      </div>
-    </footer>
+    <div class="layout">
+      <aside class="sidebar">
+        {% include nav.html %}
+      </aside>
+      <main class="content">
+        {{ content }}
+        <footer class="site-footer">
+          <p><strong>{{ site.title }}</strong> — {{ site.description }}</p>
+          <p class="muted">Copyright © {{ site.time | date: "%Y" }}</p>
+        </footer>
+      </main>
+    </div>
     <script src="{{ "/assets/js/theme.js" | relative_url }}"></script>
   </body>
 </html>
-

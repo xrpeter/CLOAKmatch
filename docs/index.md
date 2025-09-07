@@ -3,9 +3,9 @@ title: CLOAKmatch
 subtitle: Private set-style syncing via Ristretto255 OPRF + XChaCha20-Poly1305
 ---
 
-# Overview
+# Welcome
 
-Welcome to CLOAKmatch. This documentation covers prerequisites, a 2-command quickstart, the source file format, CLI usage, and HTTP API details.
+This documentation covers prerequisites, a 2-command quickstart, the source file format, CLI usage, and HTTP API details.
 
 ## Prerequisites
 
