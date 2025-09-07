@@ -1,0 +1,6 @@
+# Runtime
+# This project has no Python package dependencies at runtime.
+# It requires the system library 'libsodium' to be installed (e.g., via Homebrew or apt).
+
+# Dev/Test
+pytest>=7.0
