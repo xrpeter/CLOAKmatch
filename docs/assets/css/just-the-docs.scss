@@ -2,31 +2,22 @@
 ---
 @import "just-the-docs";
 
-/* Enlarge the header logo; keep responsive and avoid layout shift */
+/* Enlarge the header logo only; keep layout intact */
 .site-header .site-logo,
 .site-header .site-logo img {
-  height: 64px !important;
+  height: 72px !important;
   width: auto !important;
 }
 
 @media (max-width: 50rem) {
   .site-header .site-logo,
   .site-header .site-logo img {
-    height: 50px !important;
+    height: 56px !important;
   }
 }
 
-/* Left-align the overall layout instead of center-anchoring the content */
-.main,
-.page,
-.main-content,
-.container,
-.container-lg {
+/* Left-align the content area without breaking the sidebar layout */
+.main-content .page {
   margin-left: 0 !important;
-}
-
-/* Provide some breathing room on the left when full-width */
-.main-content {
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
+  margin-right: auto !important;
 }

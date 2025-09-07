@@ -5,3 +5,5 @@ logo: CLOAKmatch.png
 search_enabled: true
 color_scheme: dark
 permalink: pretty
+plugins:
+  - jekyll-remote-theme
