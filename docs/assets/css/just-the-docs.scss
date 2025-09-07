@@ -1,0 +1,18 @@
+---
+---
+@import "just-the-docs";
+
+/* Enlarge the header logo; keep responsive and avoid layout shift */
+.site-header .site-logo,
+.site-header .site-logo img {
+  height: 56px !important;
+  width: auto !important;
+}
+
+@media (max-width: 50rem) {
+  .site-header .site-logo,
+  .site-header .site-logo img {
+    height: 44px !important;
+  }
+}
+
