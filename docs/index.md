@@ -1,12 +1,11 @@
 ---
 title: CLOAKmatch
+subtitle: Private set-style syncing via Ristretto255 OPRF + XChaCha20-Poly1305
 ---
 
-# CLOAKmatch
+# Overview
 
-Private set-style syncing of indicators with encrypted metadata using a Ristretto255 OPRF and XChaCha20-Poly1305.
-
-> Tip: This site is generated from the repo's `docs/` folder and can be published with GitHub Pages. See the instructions at the end of this page.
+Welcome to CLOAKmatch. This documentation covers prerequisites, a 2-command quickstart, the source file format, CLI usage, and HTTP API details.
 
 ## Prerequisites
 
@@ -92,8 +91,6 @@ Notes:
 2. In GitHub: Settings → Pages.
 3. Build and deployment → Source: select `Deploy from a branch`.
 4. Branch: choose your default branch (e.g., `main`) and `/docs` folder.
-5. Save. The site will be published at:
-   - `https://<your-user-or-org>.github.io/<your-repo>/`
+5. Save. The site will be published at: `https://<your-user-or-org>.github.io/<your-repo>/`
 
-Optional: To show the project logo on this site, place `CLOAKmatch.png` inside `docs/` and reference it as `CLOAKmatch.png` in your Markdown.
-
+Tip: To include the project logo on this site, copy `CLOAKmatch.png` into `docs/` and reference it as `CLOAKmatch.png`.

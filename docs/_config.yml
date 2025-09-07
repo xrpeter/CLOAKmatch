@@ -1,4 +1,12 @@
 title: CLOAKmatch
 description: Private set-style syncing via Ristretto255 OPRF
-theme: jekyll-theme-cayman
-
+markdown: kramdown
+highlighter: rouge
+plugins:
+  - jekyll-seo-tag
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: default
