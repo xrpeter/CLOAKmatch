@@ -113,8 +113,18 @@ Notes:
 
 ## Documentation Site
 
-This repo includes a `docs/` folder ready for GitHub Pages.
+A professional documentation site is included under `docs/`, using the Just the Docs theme.
 
-- Enable Pages: Settings → Pages → Source: `Deploy from a branch`; Branch: your default branch; Folder: `/docs`.
+- Enable GitHub Pages: Settings → Pages → Source: `Deploy from a branch`; Branch: your default branch; Folder: `/docs`.
 - The site will publish to `https://<your-user-or-org>.github.io/<your-repo>/`.
-- To display the logo on the site, copy `CLOAKmatch.png` into `docs/` and reference it as `CLOAKmatch.png`.
+- To show the logo, copy `CLOAKmatch.png` into `docs/` (already referenced in `docs/_config.yml`).
+- Start reading at `docs/index.md` or visit the published site once Pages is enabled.
+
+Key sections:
+
+- Overview and Quickstart: `docs/index.md`
+- Getting Started and prerequisites: `docs/getting-started.md`
+- Server CLI: `docs/usage-server.md`
+- Client CLI: `docs/usage-client.md`
+- HTTP API: `docs/api-http.md`
+- Data formats and security: `docs/reference-data-formats.md`, `docs/reference-security.md`
